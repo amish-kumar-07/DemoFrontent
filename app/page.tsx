@@ -8,8 +8,13 @@ import { AnimatedTestimonialsDemo } from "./component/Testimonials";
 function Page() {
   return (
     <div className="relative min-h-screen overflow-hidden">
+      {/* Fixed Navbar */}
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <Navbar />
+      </div>
+
       {/* Section 1 - Hero Section with blobs */}
-      <div className="relative bg-gradient-to-br from-[#f6f7fb] to-[#e3e7f0] min-h-screen">
+      <div className="relative bg-gradient-to-br from-[#f6f7fb] to-[#e3e7f0] min-h-screen pt-20 lg:pt-24">
         {/* Improved blob positioning and colors */}
         <div className="pointer-events-none absolute -top-40 -right-80 h-[800px] w-[800px] rounded-full bg-gradient-to-br from-blue-400/20 to-blue-500/30 blur-3xl animate-pulse" />
 
@@ -17,7 +22,6 @@ function Page() {
 
         <div className="pointer-events-none absolute -right-20 -bottom-20 h-[400px] w-[400px] rounded-full bg-gradient-to-tr from-orange-400/40 to-pink-400/30 blur-[80px]" />
 
-        <Navbar />
         <Hero />
       </div>
 

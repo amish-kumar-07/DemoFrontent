@@ -27,7 +27,7 @@ function Hero() {
     }
 
     return (
-        <div className='min-h-[80vh] flex flex-col items-center justify-center px-4 md:px-8 py-12 md:py-20 bg-gradient-to-br from-purple-50 to-orange-50' >
+        <div className='min-h-[calc(100vh-4rem)] lg:min-h-[calc(100vh-5rem)] flex flex-col items-center justify-center px-4 md:px-16 py-8 md:py-24 bg-gradient-to-br from-purple-50 to-orange-50' >
             {/* Main Heading */}
             <div className='text-center max-w-4xl mb-8 md:mb-12 mt-8 md:mt-15'>
                 <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight px-2'>
